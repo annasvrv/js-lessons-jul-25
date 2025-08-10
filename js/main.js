@@ -88,10 +88,10 @@ console.log(x ** y); // 20736 (exponent)
 let score = "100";
 
 score += 50;
-console.log(score); // 10050
+console.log(score, typeof score); // 10050
 
 score -= 50;
-console.log(score); // 10000
+console.log(score, typeof score); // 10000
 
 // Exercise 3 - Write a condition that: Checks if age is over 18 AND has a driving license. Logs "Can drive" or "Cannot drive".
 
@@ -100,19 +100,19 @@ let age = 18;
 let driveLicense = true;
 driveLicense = false;
 const driveAbility = function (age, driveLicense) {
-  if (age >= 18 && driveLicense === true) {
+  if (age > 18 && driveLicense === true) {
     console.log("Can drive");
   } else {
     console.log("Cannot drive");
   }
 };
 
-driveAbility();
+driveAbility(age, driveLicense);
 
 // Exercise 4 - Use ! to reverse a boolean variable.
 
 let myVariable = false;
-console.log(!myVariable);
+console.log(myVariable, !myVariable);
 
 // Exercise 5 - Test == vs === with the same values but different types.
 
