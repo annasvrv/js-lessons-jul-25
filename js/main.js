@@ -1,6 +1,6 @@
 // Random letter from name or word 'contradiction'
 
-const word = "contradiction";
+let word = "contradiction";
 word.length;
 word.split("");
 
