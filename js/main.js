@@ -20,7 +20,7 @@ const testBoolean = true;
 const testNull = null;
 const testUndefined = undefined;
 const testSymbol = Symbol(4);
-const testBigit = 1233454n;
+const testBigint = 1233454n;
 
 const testArray = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 const testObject = {
@@ -41,7 +41,7 @@ console.log(typeof testBoolean);
 console.log(typeof testNull);
 console.log(typeof testUndefined);
 console.log(typeof testSymbol);
-console.log(typeof testBigit);
+console.log(typeof testBigint);
 console.log(typeof testArray);
 console.log(typeof testObject);
 console.log(typeof testFunction);
@@ -63,3 +63,8 @@ const movies = ["Last", "Now", "Future"];
 const myFunction = function () {
   console.log("Welcome to JavaScript");
 };
+
+// Call functions
+
+testFunction();
+myFunction();
