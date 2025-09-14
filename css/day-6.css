@@ -1,0 +1,44 @@
+.container {
+  margin: 100px auto 50px;
+  padding: 20px 40px;
+  max-width: 500px;
+  border: 1px solid #000;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 56px;
+  color: #3670cc;
+  text-decoration: underline;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #06022b;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 42px;
+  font-style: italic;
+}
+
+ul {
+  display: grid;
+  gap: 10px;
+  list-style: circle;
+}
+
+li {
+  font-size: 24px;
+}
