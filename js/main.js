@@ -1,4 +1,4 @@
-// Day 1 Variables: var, let, const
+// Day 1 Variables: var, let, const ******************************************
 
 // Exercise 1
 console.log("Anna");
@@ -10,7 +10,7 @@ const myHobby = "reading";
 
 console.log(`Hi, I'm ${myName}, I'm ${myAge} years old and I love ${myHobby}.`);
 
-// Day 2 Data Types
+// Day 2 Data Types **********************************************************
 
 // Exercise 1 - Create variables for each data type (primitive + reference).
 
@@ -69,7 +69,7 @@ const myFunction = function () {
 testFunction();
 myFunction();
 
-// Day 3 Operators & Type Coercion
+// Day 3 Operators & Type Coercion ******************************************
 
 // Exercise 1 - Create two numbers and perform all arithmetic operations on them.
 
