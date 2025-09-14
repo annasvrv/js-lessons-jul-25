@@ -22,6 +22,11 @@ function square(num) {
 }
 console.log("Answer:", square(12));
 
+function square(num) {
+  return num ** 2;
+}
+console.log("Answer:", square(3));
+
 // Write a function expression that takes 2 numbers and returns their sum.
 
 const sum = function (a, b) {
@@ -39,15 +44,19 @@ function workDays(day = "Monday") {
 }
 console.log(workDays());
 
+const officeDay = (day = "Tuesday") => `Our office day, ${day}`;
+console.log(officeDay());
+console.log(officeDay("Friday"));
+
 // Write a function that takes an array of numbers and returns the largest number.
 
 // First approach
-function lagestNum(list) {
+function lagerstNum(list) {
   return Math.max(...list);
 }
 
 const numberOfList = [54, 92, 2, 1506, 43, 16, 28, 88];
-const result = lagestNum(numberOfList);
+const result = lagerstNum(numberOfList);
 console.log(`The largest number: ${result}`);
 
 // Second approach
