@@ -83,7 +83,7 @@ switch (weekDay) {
     console.log("Wednesday");
     break;
   case 4:
-    console.log("Thurday");
+    console.log("Thursday");
     break;
   case 5:
     console.log("Friday");
@@ -103,9 +103,7 @@ switch (weekDay) {
 for (let i = 1; i <= 20; i++) {
   if (i%2 === 0) {
     console.log(i);
-  } else {
-    continue;
-  }
+  } 
 }
 
 // Write a while loop that counts down from 10 to 1.
