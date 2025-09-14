@@ -24,7 +24,9 @@ console.log(paragraph.textContent);
 
 let listItems = document.querySelectorAll("li");
 
-for (let i = 0; i <= listItems.length; i++) {
-  item = listItems[i].textContent;
-  console.log(item);
+for (let i = 0; i < listItems.length; i++) {
+  let item = listItems[i].textContent;
+  console.log(i + 1, item);
 }
+
+listItems.forEach((li) => console.log("List Item:", li.textContent));
