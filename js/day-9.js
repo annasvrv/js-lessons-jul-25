@@ -79,14 +79,16 @@ btnContainer.addEventListener("click", (e) => {
 
 // Prevent bubbling with stopPropagation() so only the button logs.
 const buttonAll = document.querySelectorAll("button");
-buttonAll.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log("Button any clicked");
+buttonAll.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    console.log("Button any clicked");
+  });
 });
 
 // Finally, implement delegation: one listener on the container that logs the text of whichever button was clicked.
 btnContainer.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
-    console.log("You clicked:", e.target.textContent);
+    console.log(`You clicked: ${e.target.textContent}`);
   }
 });
