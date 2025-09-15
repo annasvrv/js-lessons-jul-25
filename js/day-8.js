@@ -60,14 +60,20 @@ button.addEventListener("click", () => {
 // Add a keydown event on the input → log the pressed key.
 const input = document.querySelector("#name-input");
 input.addEventListener("keydown", (event) => {
-  console.log("Event:", event.type);
+  // can see which key is pressed
+  console.log("Key pressed:", event.key);
 });
 
 // When typing in the input, update the <p> text live with whatever is typed.
 const liveText = document.querySelector("#output");
 
+// updates result
 input.addEventListener("change", updateValue);
 
 function updateValue(e) {
   liveText.textContent = e.target.value;
 }
+// live update
+input.addEventListener("input", (e) => {
+  liveText.textContent = e.target.value;
+});
