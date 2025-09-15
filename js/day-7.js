@@ -1,3 +1,41 @@
+// Day 7: Modifying the DOM.
+
+// 1. Changing Text Content
+// const title = document.getElementById("main-title");
+
+// title.textContent = "Updated Title";  // changes text
+// title.innerText = "Visible Only Text"; 
+// title.innerHTML = "<span style='color:red'>Red Title</span>"; // injects HTML
+
+// 2️⃣ Changing Attributes
+// const link = document.querySelector("a");
+
+// link.setAttribute("href", "https://developer.mozilla.org");
+// console.log(link.getAttribute("href")); // check value
+
+
+// Shortcut for some attributes:
+
+// const img = document.querySelector("img");
+// img.src = "new-image.jpg";
+// img.alt = "Updated alt text";
+
+// 3️⃣ Changing Styles
+// const paragraph = document.querySelector(".description");
+
+// paragraph.style.color = "blue";
+// paragraph.style.fontSize = "20px";
+// paragraph.style.backgroundColor = "lightyellow";
+
+// 4️⃣ Adding & Removing Classes
+// const box = document.querySelector(".box");
+
+// box.classList.add("highlight");
+// box.classList.remove("hidden");
+// box.classList.toggle("active"); // adds if not present, removes if present
+
+
+
 // In your day-7.js:
 
 // Change the <h1> text to "Welcome to DOM Manipulation".
@@ -19,6 +57,5 @@ elem.classList.add("highlight");
 
 // Update the <img> src and alt attributes.
 const image = document.querySelector("img");
-image.src =
-  "https://www.freepik.com/free-psd/beautiful-cat-portrait-isolated_38310664.htm#fromView=keyword&page=1&position=0&uuid=2173c628-b771-456d-b698-0173b662f0b8&query=Cat+png";
-image.alt = "ginger cat";
+image.src = "https://placekitten.com/300/200";
+image.alt = "cute cat";
