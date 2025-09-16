@@ -72,20 +72,16 @@
 // (Optional) Add a real-time feature: while typing in the name field, update a preview paragraph that says:
 // "Hello, [name]".
 
+const greet = document.querySelector("#greet-title");
 const form = document.querySelector("#user-form");
 const userName = document.querySelector("#name");
 const password = document.querySelector("#password");
 const notification = document.querySelector("#feedback");
+const alert = document.querySelector("#alert");
+const message = document.querySelector("#message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
-  // if (userName.value === "" || password.value === "") {
-  //   notification.forEach((elem) => {
-  //     elem.textContent = "Please fill out all fields";
-  //     elem.classList.add("text--error");
-  //   });
-  // }
 
   if (userName.value === "" || password.value === "") {
     notification.textContent = "Please fill out all fields";
@@ -93,5 +89,14 @@ form.addEventListener("submit", (event) => {
   } else {
     notification.textContent = "Correct";
     notification.classList.add("text--accept");
+    message.textContent = `Welcome, ${userName.value}`;
+    userName.addEventListener(input, (e) => {
+      greet.textContent = e.target.value;
+    });
+  }
+
+  if (password.value.length < 6) {
+    alert.textContent = "Password must be at least 6 characters";
+    alert.classList.add("text--alert");
   }
 });
