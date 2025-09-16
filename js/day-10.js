@@ -90,13 +90,14 @@ form.addEventListener("submit", (event) => {
     notification.textContent = "Correct";
     notification.classList.add("text--accept");
     message.textContent = `Welcome, ${userName.value}`;
-    userName.addEventListener(input, (e) => {
-      greet.textContent = e.target.value;
-    });
   }
 
   if (password.value.length < 6) {
     alert.textContent = "Password must be at least 6 characters";
     alert.classList.add("text--alert");
   }
+});
+
+userName.addEventListener(input, (e) => {
+  greet.textContent = `Hello, ${e.target.value}`;
 });
