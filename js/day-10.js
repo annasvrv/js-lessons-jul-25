@@ -55,30 +55,43 @@
 // 💻 Today’s Exercises
 
 // Create an HTML file with:
-
 // A form containing:
-
 // A text input for name (id="name").
-
 // A password input (id="password").
-
 // A submit button.
-
 // A <p id="feedback"></p> below the form.
 
 // In your day-10.js:
 
 // Select the form and inputs.
-
 // On submit (form.addEventListener("submit", ...)):
-
 // Prevent reload with event.preventDefault().
-
 // If name or password is empty → show "Please fill out all fields" in red.
-
 // If password length < 6 → show "Password must be at least 6 characters" in orange.
-
 // Otherwise → show "Welcome, <name>!" in green.
-
 // (Optional) Add a real-time feature: while typing in the name field, update a preview paragraph that says:
 // "Hello, [name]".
+
+const form = document.querySelector("#user-form");
+const userName = document.querySelector("#name");
+const password = document.querySelector("#password");
+const notification = document.querySelector("#feedback");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  // if (userName.value === "" || password.value === "") {
+  //   notification.forEach((elem) => {
+  //     elem.textContent = "Please fill out all fields";
+  //     elem.classList.add("text--error");
+  //   });
+  // }
+
+  if (userName.value === "" || password.value === "") {
+    notification.textContent = "Please fill out all fields";
+    notification.classList.add("text--error");
+  } else {
+    notification.textContent = "Correct";
+    notification.classList.add("text--accept");
+  }
+});

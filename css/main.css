@@ -54,3 +54,15 @@
   background-color: #edf2ed;
   cursor: pointer;
 }
+
+.text {
+  font-size: 12px;
+}
+
+.text--error {
+  color: #c62d2d;
+}
+
+.text--accept {
+  color: #219121;
+}
