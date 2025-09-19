@@ -76,28 +76,32 @@ const greet = document.querySelector("#greet-title");
 const form = document.querySelector("#user-form");
 const userName = document.querySelector("#name");
 const password = document.querySelector("#password");
-const notification = document.querySelector("#feedback");
-const alert = document.querySelector("#alert");
-const message = document.querySelector("#message");
+const alertName = document.querySelector("#alert-name");
+const alertPsw = document.querySelector("#alert-psw");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (userName.value === "" || password.value === "") {
-    notification.textContent = "Please fill out all fields";
-    notification.classList.add("text--error");
+  if (userName.value === "") {
+    alertName.textContent = "Please fill out all fields";
+    alertName.style.color = "#c62d2d";
   } else {
-    notification.textContent = "Correct";
-    notification.classList.add("text--accept");
-    message.textContent = `Welcome, ${userName.value}`;
+    alertName.textContent = "Correct";
+    alertName.style.color = "#219121";
   }
 
-  if (password.value.length < 6) {
-    alert.textContent = "Password must be at least 6 characters";
-    alert.classList.add("text--alert");
+  if (password.value.length === 0) {
+    alertPsw.textContent = "Please fill out all fields";
+    alertPsw.style.color = "#c62d2d";
+  } else if (password.value.length < 6 && password.value.length > 0) {
+    alertPsw.textContent = "Password must be at least 6 characters";
+    alertPsw.style.color = "#b79023";
+  } else {
+    alertPsw.textContent = "Correct";
+    alertPsw.style.color = "#219121";
   }
 });
 
-userName.addEventListener(input, (e) => {
+userName.addEventListener("input", (e) => {
   greet.textContent = `Hello, ${e.target.value}`;
 });
