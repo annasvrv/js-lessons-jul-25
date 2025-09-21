@@ -55,6 +55,15 @@
   cursor: pointer;
 }
 
+.button:active {
+  border-color: #edf2ed;
+}
+
+.button:hover {
+  background-color: #3e2f2f;
+  color: #edf2ed;
+}
+
 .text {
   font-size: 12px;
 }

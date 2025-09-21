@@ -4,7 +4,7 @@
 // const title = document.getElementById("main-title");
 
 // title.textContent = "Updated Title";  // changes text
-// title.innerText = "Visible Only Text"; 
+// title.innerText = "Visible Only Text";
 // title.innerHTML = "<span style='color:red'>Red Title</span>"; // injects HTML
 
 // 2️⃣ Changing Attributes
@@ -12,7 +12,6 @@
 
 // link.setAttribute("href", "https://developer.mozilla.org");
 // console.log(link.getAttribute("href")); // check value
-
 
 // Shortcut for some attributes:
 
@@ -33,8 +32,6 @@
 // box.classList.add("highlight");
 // box.classList.remove("hidden");
 // box.classList.toggle("active"); // adds if not present, removes if present
-
-
 
 // In your day-7.js:
 

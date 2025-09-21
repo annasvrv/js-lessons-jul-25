@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #edf2ed;
+  color: forestgreen;
+}
+
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #3e2f2f;
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  border: 2px solid #3e2f2f;
+  border-radius: 10px;
+}
+
+.input {
+  padding: 10px 20px;
+  border: 1px solid #3e2f2f;
+  border-radius: 8px;
+  background-color: #edf2ed;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid #3e2f2f;
+  border-radius: 8px;
+  background-color: #edf2ed;
+  cursor: pointer;
+}
+
+.button:active {
+  border-color: #edf2ed;
+}
+
+.button:hover {
+  background-color: #3e2f2f;
+  color: #edf2ed;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.text--error {
+  color: #c62d2d;
+}
+
+.text--accept {
+  color: #219121;
+}
+
+.text--alert {
+  color: #b79023;
+}
+
+.greeting {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
