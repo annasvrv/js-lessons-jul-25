@@ -82,7 +82,7 @@ const alertPsw = document.querySelector("#alert-psw");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (userName.value === "") {
+  if (userName.value.trim() === "") {
     alertName.textContent = "Please fill out all fields";
     alertName.style.color = "#c62d2d";
   } else {
@@ -103,5 +103,5 @@ form.addEventListener("submit", (event) => {
 });
 
 userName.addEventListener("input", (e) => {
-  greet.textContent = `Hello, ${e.target.value}`;
+  greet.textContent = `Hello, ${e.target.value || "friend"}!`;
 });
