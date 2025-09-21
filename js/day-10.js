@@ -105,3 +105,53 @@ form.addEventListener("submit", (event) => {
 userName.addEventListener("input", (e) => {
   greet.textContent = `Hello, ${e.target.value || "friend"}!`;
 });
+
+
+//  *********************************************************
+
+// Reusable validation function
+// function validateForm({ nameInput, passwordInput, feedbackElement }) {
+//   const nameValue = nameInput.value.trim();
+//   const pswValue = passwordInput.value;
+
+//   if (nameValue === "" || pswValue === "") {
+//     feedbackElement.textContent = "❌ Please fill out all fields.";
+//     feedbackElement.style.color = "#c62d2d";
+//     return false;
+//   }
+
+//   if (pswValue.length < 6) {
+//     feedbackElement.textContent = "⚠️ Password must be at least 6 characters.";
+//     feedbackElement.style.color = "#b79023";
+//     return false;
+//   }
+
+//   feedbackElement.textContent = `✅ Welcome, ${nameValue}!`;
+//   feedbackElement.style.color = "#219121";
+//   return true;
+// }
+
+// -----------------------------
+// Setup for your form
+// -----------------------------
+// const greet = document.querySelector("#greet-title");
+// const form = document.querySelector("#user-form");
+// const userName = document.querySelector("#name");
+// const password = document.querySelector("#password");
+// const feedback = document.querySelector("#feedback");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   validateForm({
+//     nameInput: userName,
+//     passwordInput: password,
+//     feedbackElement: feedback,
+//   });
+// });
+
+// Real-time greeting
+// userName.addEventListener("input", (e) => {
+//   greet.textContent = `Hello, ${e.target.value || "friend"}!`;
+// });
+
