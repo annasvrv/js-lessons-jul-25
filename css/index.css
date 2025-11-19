@@ -33,3 +33,29 @@
 .grid-item:nth-child(6) {
   grid-area: 4 / 1 / span 3 / 2;
 }
+
+.flex-list {
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  border: 3px solid #4864e3;
+  border-radius: 6px;
+  padding: 20px;
+  list-style: none;
+  min-width: 450px;
+}
+
+.flex-list-item {
+  box-sizing: border-box;
+  border: 2px solid #29442c;
+  background-color: #adbcad;
+  border-radius: 6px;
+  padding: 10px;
+  /* width: 100px; */
+}
+
+.flex-grow {
+  /* width: 100px; */
+  /* flex-basis: 150px; */
+  flex-grow: 1;
+}
